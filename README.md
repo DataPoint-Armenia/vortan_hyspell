@@ -4,6 +4,8 @@ Armenian spellcheck with hunspell dictionaries
 
 ## Usage
 
+Usage:
+
 ```
   index [options] [command]
 ```
@@ -31,5 +33,3 @@ node index.js correct վորթ
 
 >> [ false, [ 'որթ', 'մորթ', 'տորթ', 'հորթ', 'խորթ', 'չթվոր' ] ]
 ```
-
-Where the first value indicated whether the word is misspelled and the second value shows suggestions.

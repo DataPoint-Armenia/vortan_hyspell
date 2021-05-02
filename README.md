@@ -30,6 +30,5 @@ Options:
 ``` bash
 npm install
 node index.js correct վորթ
-
->> [ false, [ 'որթ', 'մորթ', 'տորթ', 'հորթ', 'խորթ', 'չթվոր' ] ]
+{"word":"վորթ","suggestions":["որթ","թորթ","վ որթ"]}
 ```

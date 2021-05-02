@@ -12,7 +12,9 @@ commander
     .description("Return suggestions for misspelled word")
     .action(function (word) {
         src.init(commander).then(function (dict) {
-            src.correct(word, dict).then(console.log).catch(console.error);
+            src.correct(word, dict).then(function (result) {
+                console.log(JSON.stringify(result));
+            }).catch(console.error);
         });
     });
 

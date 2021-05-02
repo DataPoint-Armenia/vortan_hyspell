@@ -5,8 +5,13 @@ module.exports = function(word, nodehun) {
         nodehun.suggest(word)
             .then(
                 suggestions => {
-                    var is_correct = suggestions === null;
-                    resolve([is_correct, suggestions])
+                    if (suggestions === null) {
+                        suggestions = []
+                    }
+                    resolve({
+                        word: word,
+                        suggestions: suggestions,
+                    })
                 },
                 reason => {
                     reject(reason);

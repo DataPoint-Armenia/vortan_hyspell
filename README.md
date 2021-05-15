@@ -2,6 +2,10 @@
 
 Armenian spellcheck with hunspell dictionaries
 
+## Docs
+
+- [vortan_docs](https://github.com/DataPoint-Armenia/vortan_docs)
+
 ## Usage
 
 Usage:
